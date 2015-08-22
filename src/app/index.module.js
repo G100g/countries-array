@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('countriesSources', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngRoute', 'ui.bootstrap']);
+    .module('countriesSources', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngRoute', 'ui.bootstrap', 'hljs']);
 
 })();
