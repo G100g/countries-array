@@ -37,7 +37,14 @@
         escape: function (text) {
           return text.replace(/"/ig, '\\\"');
         }
+      },
+      'py': {
+        code: 'py',
+        language: 'python',
+        name: 'Array',
+        template: 'py.hbs'
       }
+
     };
 
     this.getLanguages = getLanguages;

@@ -1,0 +1,5 @@
+countries = [
+  {{#each countries}}
+  {'code': '{{iso2}}', 'name': '{{escape name}}'}{{#if @last}}{{else}},{{/if}}
+  {{/each}}
+]
