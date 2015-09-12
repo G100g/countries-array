@@ -12,6 +12,7 @@ angular.module('countriesArrayApp')
 
     $scope.creationDate = 1440193879925;
     $scope.languages = languages.getLanguages();
+    $scope.currentLanguage = $scope.languages.jsa;
 
     function selectLanguage (language) {
 
@@ -27,8 +28,6 @@ angular.module('countriesArrayApp')
       }
 
     }
-
-    $scope.ll = 'js';
 
     $scope.$watch('currentLanguage', function (language) {
       selectLanguage(language);
