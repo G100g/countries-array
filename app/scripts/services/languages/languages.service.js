@@ -40,7 +40,7 @@
       'py': {
         code: 'py',
         language: 'python',
-        name: 'Array',
+        name: 'Python Array',
         template: 'py.hbs'
       }
 
