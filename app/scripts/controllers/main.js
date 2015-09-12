@@ -9,13 +9,8 @@
  */
 angular.module('countriesArrayApp')
   .controller('MainCtrl', function ($scope, languages) {
-    var vm = this;
 
-    // vm.awesomeThings = [];
-    // vm.classAnimation = '';
     $scope.creationDate = 1440193879925;
-    // vm.showToastr = showToastr;
-
     $scope.languages = languages.getLanguages();
 
     function selectLanguage (language) {
@@ -24,22 +19,20 @@ angular.module('countriesArrayApp')
 
         languages.renderLanguage(language.code).then(function (code) {
 
-          console.log('Apply template to text area');
-
+          $scope.ll = language.language;
           $scope.code = code;
 
         });
 
       }
 
-    };
+    }
 
-    // $scope.selectLanguage($scope.languages.js);
+    $scope.ll = 'js';
 
     $scope.$watch('currentLanguage', function (language) {
-      console.log("seleziono ", language);
-
       selectLanguage(language);
-
     });
+
+    selectLanguage($scope.languages.jsa);
   });
