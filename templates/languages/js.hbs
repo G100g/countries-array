@@ -1,0 +1,7 @@
+var countries = [
+
+  {{#each countries}}
+  '{{escape name}}'{{#if @last}}{{else}},{{/if}}
+  {{/each}}
+
+];
