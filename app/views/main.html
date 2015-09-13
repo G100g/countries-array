@@ -1,15 +1,15 @@
 <div class="container">
 
-  <h1 class="text-center">Countries Source</h1>
+  <h1 class="text-center">Countries Array</h1>
 
-  <p class="text-center">Select your preferend language</p>
+  <p class="text-center">Select your favorite language</p>
 
   <div class="row">
 
     <div id="options" class="col-sm-4 col-sm-push-4 text-center">
 
       <select class="form-control" ng-model="currentLanguage" ng-options="language.name group by language.language for language in languages">
-          <!-- <option ng-repeat="l in languages" value="{{l.code}}" ng-change="selectCode(l)">{{l.name}}</option> -->
+
       </select>
 
     </div>
