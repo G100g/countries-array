@@ -27,6 +27,12 @@
         "dist/css/bootstrap.css",
         "dist/js/bootstrap.js"
       ]
+    },
+    "highlightjs": {
+      "main": [
+        "highlight.pack.js",
+        "styles/tomorrow.css"
+      ]
     }
   },
   "resolutions": {
