@@ -77,19 +77,12 @@
         return new Handlebars.SafeString(result);
       });
 
-
-
-      console.log(languageFile)
-
       // Load text filter
       var promise = loadTemplate(languageFile).then(function (source) {
 
         var data = {
           countries: countries.getCountries()
         };
-
-        console.log('Loaded ' + languageFile);
-        console.log();
 
         var template = Handlebars.compile(source);
 
