@@ -3,6 +3,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+$dark_color: #5E5056;
+$light_color: #EFEBBF;
+$primary_color: #9FCCB1;
+$secondary_color: #F6FF4C;
+$alternative_color: #FF8A42;
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -10,12 +16,19 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
-body {
-  padding: 0;
+a,
+a:hover {
+  color: $alternative_color;
 }
 
 body {
-  font-family: 'Lato', serif;
+  padding: 0;
+
+  border-top: 5px solid $primary_color;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
   h1 {
@@ -24,7 +37,6 @@ body {
 
   .code-container {
     padding: 40px 0 30px;
-    margin-bottom: 20px;
     background: #9FCCB1;
 
     pre {
@@ -42,4 +54,18 @@ body {
 
   margin-bottom: 30px;
 
+}
+
+#intro {
+  .description {
+    color: $dark_color;
+    font-size: 1.6em;
+    font-weight: 300;
+  }
+}
+
+footer {
+  padding: 20px 0;
+  color: $dark_color;
+  background-color: $light_color;
 }
